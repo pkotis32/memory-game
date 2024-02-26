@@ -87,14 +87,17 @@ startButton.addEventListener('click', function (e) {
   attemptsElem.innerText = "Attempts: 0";
 
   // checks through the saved scores and finds the minimum
-  let min = savedScores[0]
-    for (let score of savedScores) {
-      if (score < min) {
-        min = score;
+  if (savedScores.length > 0) {
+    let min = savedScores[0]
+      for (let score of savedScores) {
+        if (score < min) {
+          min = score;
+        }
       }
-    }
-    // function call to update the best score on the screen
-    updateBestScore(min)
+      // function call to update the best score on the screen
+      updateBestScore(min)
+  }
+  
 })
 
 
