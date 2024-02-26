@@ -1,10 +1,10 @@
 body {
-  background-color: rgb(96, 94, 94);
+  background-color: rgb(196, 210, 216);
 }
 
 /* creates card borders */
 #game div {
-  border: 1px solid black;
+  border: 2px solid black;
   width: 15%;
   height: 200px;
   margin: 10px;
